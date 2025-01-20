@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Structure Estimation Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Salary Structure Estimation Portal</h1>
+        <form id="salary-form">
+            <label for="experience">Enter your total experience in years:</label>
+            <input type="number" id="experience" name="experience" placeholder="Enter 0 if fresher" required>
+
+            <label for="salary">Enter your current annual salary:</label>
+            <input type="number" id="salary" name="salary" placeholder="Enter 0 if fresher" required>
+
+            <label for="designation">Select your existing designation:</label>
+            <select id="designation" name="designation" required>
+                <option value="">--Choose Designation--</option>
+                <option value="frontend development">Frontend Development</option>
+                <option value="backend development">Backend Development</option>
+                <option value="mean stack">MEAN Stack</option>
+                <option value="mern stack">MERN Stack</option>
+            </select>
+
+            <label for="city">Select the city type:</label>
+            <select id="city" name="city" required>
+                <option value="">--Choose City Type--</option>
+                <option value="tier-1">Tier-1</option>
+                <option value="tier-2">Tier-2</option>
+                <option value="tier-3">Tier-3</option>
+            </select>
+
+            <button type="button" id="submit-btn">Calculate</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
